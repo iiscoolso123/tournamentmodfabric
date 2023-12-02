@@ -22,6 +22,15 @@ public class ModBlocks {
     public static final Block TOGGLE_BLOCK = registerBlock("toggle_block",
             new ToggleBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).nonOpaque()));
 
+    public static final Block SPEED_BLOCK = registerBlock("speed_boost_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).velocityMultiplier(2f)));
+
+    public static final Block JUMP_BLOCK = registerBlock("jump_boost_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).jumpVelocityMultiplier(3f)));
+
+    public static final Block ANTI_JUMP_BLOCK = registerBlock("anti_jump_boost_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).jumpVelocityMultiplier(0.4f)));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name,block);
         return Registry.register(Registries.BLOCK, new Identifier(TournamentMod.MOD_ID, name), block);

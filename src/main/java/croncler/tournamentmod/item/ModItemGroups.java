@@ -20,6 +20,9 @@ public class ModItemGroups {
                         entries.add(ModItems.WAND);
                         entries.add(ModBlocks.KILLER_BLOCK);
                         entries.add(ModBlocks.TOGGLE_BLOCK);
+                        entries.add(ModBlocks.SPEED_BLOCK);
+                        entries.add(ModBlocks.ANTI_JUMP_BLOCK);
+                        entries.add(ModBlocks.JUMP_BLOCK);
                     }))
 
                     .build());

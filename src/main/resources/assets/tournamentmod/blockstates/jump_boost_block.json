@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tournamentmod:block/jump_boost_block"
+    }
+  }
+}

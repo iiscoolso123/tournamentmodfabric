@@ -1,10 +1,7 @@
 package croncler.tournamentmod.block.custom;
 
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.PowderSnowBlock;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -14,6 +11,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
@@ -33,7 +31,21 @@ public class ToggleBlock extends Block {
         super(settings);
         setDefaultState(getDefaultState().with(CHARGED, false));
     }
+    @Override
+    public VoxelShape getSidesShape(BlockState state, BlockView world, BlockPos pos) {
+        if (state.get(CHARGED).booleanValue()) {
+            return VoxelShapes.empty();
+        }
+        return NORMAL;
+    }
 
+    @Override
+    public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        if (state.get(CHARGED).booleanValue()) {
+            return VoxelShapes.empty();
+        }
+        return NORMAL;
+    }
 
 
     @Override
