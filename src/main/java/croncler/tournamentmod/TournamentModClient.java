@@ -3,6 +3,7 @@ package croncler.tournamentmod;
 import croncler.tournamentmod.block.ModBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.minecraft.block.PistonBlock;
 import net.minecraft.client.render.RenderLayer;
 
 public class TournamentModClient implements ClientModInitializer {

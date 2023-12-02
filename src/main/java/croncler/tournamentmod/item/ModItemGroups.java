@@ -18,6 +18,8 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.WAND)).entries(((displayContext, entries) -> {
 
                         entries.add(ModItems.WAND);
+                        entries.add(ModItems.LIME_FEET);
+                        entries.add(ModItems.FLESH);
                         entries.add(ModBlocks.KILLER_BLOCK);
                         entries.add(ModBlocks.TOGGLE_BLOCK);
                         entries.add(ModBlocks.SPEED_BLOCK);

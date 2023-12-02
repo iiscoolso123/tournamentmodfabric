@@ -47,6 +47,13 @@ public class ToggleBlock extends Block {
         return NORMAL;
     }
 
+    @Override
+    public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
+        super.neighborUpdate(state, world, pos, sourceBlock, sourcePos, notify);
+        world.setBlockState(pos, state.with(CHARGED, world.getBlockState(sourcePos).get(CHARGED)));
+    }
+
+
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {

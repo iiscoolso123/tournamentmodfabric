@@ -13,6 +13,9 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item WAND = registerItem("wand", new Item(new FabricItemSettings()));
+    public static final Item FLESH = registerItem("flesh", new Item(new FabricItemSettings().food(ModFoodComponents.FLESH)));
+
+    public static final Item LIME_FEET = registerItem("lime_feet", new Item(new FabricItemSettings().food(ModFoodComponents.LIME_FEET)));
 
     private static void addItemstoCombatTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(WAND);
