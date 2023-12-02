@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "charged=false": {
+      "model": "tournamentmod:block/toggle_block1"
+    },
+    "charged=true": {
+      "model": "tournamentmod:block/toggle_block"
+    }
+  }
+}
