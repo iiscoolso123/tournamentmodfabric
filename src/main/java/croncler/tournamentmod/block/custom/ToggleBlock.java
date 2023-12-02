@@ -40,7 +40,8 @@ public class ToggleBlock extends Block {
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (world.getBlockState(pos).get(CHARGED)){
             world.setBlockState(pos, state.with(CHARGED, false));
-        } else {
+
+        }else {
             world.setBlockState(pos, state.with(CHARGED, true));
         }
 

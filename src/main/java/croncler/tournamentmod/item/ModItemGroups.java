@@ -15,9 +15,9 @@ public class ModItemGroups {
             new Identifier(TournamentMod.MOD_ID,"dildo"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.dildo"))
 
-                    .icon(() -> new ItemStack(ModItems.DILDO)).entries(((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.WAND)).entries(((displayContext, entries) -> {
 
-                        entries.add(ModItems.DILDO);
+                        entries.add(ModItems.WAND);
                         entries.add(ModBlocks.KILLER_BLOCK);
                         entries.add(ModBlocks.TOGGLE_BLOCK);
                     }))
