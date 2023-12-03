@@ -12,14 +12,15 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     public static final ItemGroup COOL_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(TournamentMod.MOD_ID,"dildo"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.dildo"))
+            new Identifier(TournamentMod.MOD_ID,"tournament"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.tournament"))
 
                     .icon(() -> new ItemStack(ModItems.WAND)).entries(((displayContext, entries) -> {
-
                         entries.add(ModItems.WAND);
                         entries.add(ModItems.LIME_FEET);
                         entries.add(ModItems.FLESH);
+                        entries.add(ModItems.LILLA_BABY);
+
                         entries.add(ModBlocks.KILLER_BLOCK);
                         entries.add(ModBlocks.TOGGLE_BLOCK);
                         entries.add(ModBlocks.SPEED_BLOCK);

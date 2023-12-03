@@ -1,7 +1,14 @@
 {
   "item.tournamentmod.wand": "Wand",
+  "item.tournamentmod.flesh": "Flesh",
+  "item.tournamentmod.lilla_baby": "Lilla baby",
+  "item.tournamentmod.lime_feet": "Lime feet",
+
   "block.tournamentmod.killer_blocki": "Toggling block",
   "block.tournamentmod.toggle_block": "Toggling block",
+  "block.tournamentmod.speed_boost_block": "Speed boost block",
+  "block.tournamentmod.jump_boost_block": "Jump boost block",
+  "block.tournamentmod.anti_jump_boost_block": "Anti jump boost block",
 
-  "itemgroup.dildo": "Tournament Mod"
+  "itemgroup.tournament": "Tournament Mod"
 }

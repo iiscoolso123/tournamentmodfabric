@@ -1,7 +1,7 @@
 package croncler.tournamentmod.item;
 
 import croncler.tournamentmod.TournamentMod;
-import net.fabricmc.fabric.api.item.v1.CustomDamageHandler;
+import croncler.tournamentmod.item.custom.lillababy;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -14,6 +14,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item WAND = registerItem("wand", new Item(new FabricItemSettings()));
     public static final Item FLESH = registerItem("flesh", new Item(new FabricItemSettings().food(ModFoodComponents.FLESH)));
+    public static final Item LILLA_BABY = registerItem("lilla_baby", new lillababy(new FabricItemSettings().food(ModFoodComponents.FLESH)));
 
     public static final Item LIME_FEET = registerItem("lime_feet", new Item(new FabricItemSettings().food(ModFoodComponents.LIME_FEET)));
 
